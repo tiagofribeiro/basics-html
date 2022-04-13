@@ -5,3 +5,4 @@
 - Formatting
 - Especial Chars
 - Images
+- Navigation
