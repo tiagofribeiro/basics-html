@@ -1,0 +1,24 @@
+:root {
+    --main1:#f16b31;
+    --main2:#c74a27;
+    --secondary1:#3D71FF;
+    --secondary2:#2b50b6;
+    --white1:#fcf1e8;
+    --white2:#ebe3dd;
+}
+
+.body-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 12px;
+    justify-content: center;
+    background-color: var(--white2);
+}
+
+.header-wrapper {
+    width: 50%;
+    align-items: center;
+    align-content: center;
+    
+}
