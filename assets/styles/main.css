@@ -7,18 +7,33 @@
     --white2:#ebe3dd;
 }
 
-.body-wrapper {
+* {
+    margin:0; 
+    padding:0;
+    color:#f2f5f7;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
     display: flex;
-    width: 100%;
-    height: 100%;
-    margin: 12px;
     justify-content: center;
     background-color: var(--white2);
 }
 
-.header-wrapper {
-    width: 50%;
+header {
+    display: flex;
+    width: 100%;
+    height: 80px;
     align-items: center;
-    align-content: center;
-    
+    justify-content: center;
+    background-color: var(--main1);
+}
+
+h2 {
+    margin: 12px;
+}
+
+li {
+    display: inline;
 }
