@@ -1,4 +1,4 @@
-var pagePath = '../pages/';
+var pagePath = './pages/';
 
 $(document).ready(function () {
     $('#page-content').load(pagePath + 'home/index.html');
