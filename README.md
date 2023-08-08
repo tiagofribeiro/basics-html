@@ -15,8 +15,9 @@ Guia simples e rápido de html, css e js `(feito em HTML, css e js <3)`
 
 Conteúdo:
 
-- Sintaxe
-- Formatação
-- Characteres especiais
-- Imagens
-- Navegação
+- Sintaxe e estrutura
+- Tabelas
+- Mídias
+- Estilização
+- Scripts
+- Referências (CheatSheet)
