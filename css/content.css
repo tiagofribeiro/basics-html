@@ -1,3 +1,4 @@
+/* base content area */
 .content-wrapper {
     display: flex;
     flex-direction: column;
@@ -5,7 +6,7 @@
 }
 
 .content-wrapper h1 {
-    margin: 24px 0;
+    margin: 20px 0;
     font-size: 36px;
     text-align: center;
 }
@@ -16,17 +17,101 @@
     color: var(--main2);
 }
 
+/* base body area */
 .content-body {
     display: flex;
     flex-direction: column;
     width: 70%;
     margin: 20px 20px 40px 20px;
-    font-weight: 900;
     line-height: 250%;
 }
 
+.content-body p {
+    font-weight: 400;
+}
+
+/* emphasis area */
+.body-emphasis {
+    display: flex;
+    width: 70%;
+    height: 100px;
+    margin: 40px 0;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background: var(--white2);
+}
+
+.body-emphasis p {
+    text-align: center;
+}
+
+.body-emphasis a{
+    color: var(--main1);
+}
+
+/* body columns area */
+.body-row {
+    display: table;
+}
+
+.body-column {
+    display: grid;
+    width: 50%;
+    float: left;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.body-column p {
+    margin: 16px 0;
+    text-decoration: underline;
+}
+
+.body-column ul li {
+    list-style: none;
+    line-height: 200%;
+}
+
+.body-column ul li:hover {
+
+    cursor: pointer;
+    color: var(--main2);
+    background: var(--white2);
+}
+
+@media screen and (max-width: 800px) {
+    .body-column {
+        width: 100%;
+    }
+}
+
+/* body social media area */
+.body-social {
+    display: flex;
+    width: 100%;
+    margin: 52px 0;
+    justify-content: center;
+}
+
+.body-social a {
+    margin: 0 20px;
+}
+
+.body-social img {
+    width: 56px;
+    height: 56px;
+}
+
+/* specific cases */
 #special-reminder {
     line-height: 350%;
     text-decoration: underline;
     color: var(--main2);
+}
+
+#little-footnote {
+    margin-top: 52px;
+    text-align: end;
+    color: var(--white3);
 }

@@ -9,6 +9,7 @@
     --secondary2:#2b50b6;
     --white1:#fcf1e8;
     --white2:#ebe3dd;
+    --white3:#cac5c0;
 }
 
 /* base */
@@ -16,7 +17,7 @@
     margin:0; 
     padding:0;
     font-family: 'JetBrains Mono', monospace;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 hr {
@@ -68,13 +69,13 @@ nav {
 
 nav ul li {
     display: inline;
-    margin: 0 12px;
-    text-decoration: underline;
+    margin: 0 20px;
 }
 
 nav ul li:hover{
-    color: var(--main2);
+    text-decoration: underline;
     cursor: grab;
+    color: var(--main2);
 }
 
 /* content area */
