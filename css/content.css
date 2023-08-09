@@ -36,6 +36,7 @@
     width: 70%;
     height: 100px;
     margin: 40px 0;
+    padding: 12px;
     align-self: center;
     align-items: center;
     justify-content: center;
@@ -46,8 +47,13 @@
     text-align: center;
 }
 
-.body-emphasis a{
-    color: var(--main1);
+.body-emphasis p span {
+    font-size: 24px;
+}
+
+.body-emphasis a {
+    margin-right: 12px;
+    color: var(--main2);
 }
 
 /* body columns area */
@@ -80,7 +86,12 @@
     background: var(--white2);
 }
 
+/* relative styles */
 @media screen and (max-width: 800px) {
+    .content-body {
+        width: 88%;
+    }
+
     .body-column {
         width: 100%;
     }
@@ -106,7 +117,6 @@
 /* specific cases */
 #special-reminder {
     line-height: 350%;
-    text-decoration: underline;
     color: var(--main2);
 }
 
