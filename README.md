@@ -13,7 +13,7 @@ Guia simples e rápido de html, css e js `(feito em HTML, css e js <3)`
 
 <br>
 
-Conteúdo:
+### Conteúdo:
 
 - Sintaxe e estrutura
 - Tabelas
@@ -21,3 +21,22 @@ Conteúdo:
 - Estilização
 - Scripts
 - Referências (CheatSheet)
+
+<br>
+<br>
+
+### Regras do git (pra eu não esquecer):
+Branches  
+> Sempre deletar branch após fechar issue com PR
+
+- ```#-desc```: sempre contém número e um resumo da issue, mais palavras separadas por hífen (kebab case)
+- ```hotfix-desc```: descreve o hotfix
+
+<br>
+
+Commits
+
+- MASTER - ```Title (#)```: resumo de mudanças (pr) - merges, prs e atualizações de readme
+- ```⚙️ wip:```: alterações em andamento
+- ```⭐ done```: alteração/issue finalizada
+- ```🔥 hotfix:``` mudanças essenciais na branch principal
