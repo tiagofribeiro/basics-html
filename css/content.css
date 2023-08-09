@@ -58,15 +58,18 @@
 
 /* body columns area */
 .body-row {
-    display: table;
+    display: flex;
+    align-items: start;
+    justify-content: center;
 }
 
 .body-column {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 50%;
-    float: left;
-    margin-bottom: 24px;
+    margin: 24px 12px;
     text-align: center;
+    justify-content: center;
 }
 
 .body-column p {
@@ -76,20 +79,29 @@
 
 .body-column ul li {
     list-style: none;
+    margin: 12px 0;
+    padding: 16px;
     line-height: 200%;
+    background: var(--white2);
+    transition: padding-left 0.5s;
 }
 
 .body-column ul li:hover {
-
     cursor: pointer;
     color: var(--main2);
-    background: var(--white2);
+    background: var(--white3);
+    padding-left: 40px;
+    transition: padding-left 0.5s;
 }
 
 /* relative styles */
 @media screen and (max-width: 800px) {
     .content-body {
         width: 88%;
+    }
+
+    .body-row {
+        flex-direction: column;
     }
 
     .body-column {
@@ -123,5 +135,5 @@
 #little-footnote {
     margin-top: 52px;
     text-align: end;
-    color: var(--white3);
+    color: var(--white4);
 }
