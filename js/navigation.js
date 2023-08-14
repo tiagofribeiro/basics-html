@@ -1,28 +1,19 @@
-var pagePath = './pages/';
+export default class Navigation {
 
-$(document).ready(function () {
-    
-    // using sessionStorage to remember last page user visited in case of reload
-    if (typeof (Storage) !== "undefined") {
-        if (sessionStorage.getItem("selectedPage") == null)
-            sessionStorage.selectedPage = "home/index.html";
+    constructor() {
+        this.pages = [
+            './pages/home/index.html',
+            './pages/content/index.html',
+            './pages/about/index.html',
+        ];
 
-        $('#home').click(function () {
-            sessionStorage.selectedPage = "home/index.html";
-            $('#page-content').load(pagePath + sessionStorage.selectedPage);
-        });
-        $('#content').click(function () {
-            sessionStorage.selectedPage = "content/index.html";
-            $('#page-content').load(pagePath + sessionStorage.selectedPage);
-        });
-        $('#about').click(function () {
-            sessionStorage.selectedPage = "about/index.html";
-            $('#page-content').load(pagePath + sessionStorage.selectedPage);
-        });
+        // sessionStorage - remeber user's last visited page in case of reload (default home)
+        this.selectedPage = sessionStorage.selectedPage ??= this.pages[0];
 
-        $('#page-content').load(pagePath + sessionStorage.selectedPage);
-    } else {
-        console.log("SessionStorage indisponível! Lide com isso, Tiago.");
+        this.setPageContent(this.selectedPage);
     }
 
-});
+    setPageContent(pagePath) {
+        sessionStorage.selectedPage = pagePath;
+    }
+}
